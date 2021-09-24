@@ -47,17 +47,20 @@ public class Main {
         }
 
 
-        stringLinked.addFirst("Novii");
+        stringLinked.addFirst("Novii v nachale");
         System.out.println("вывод списка добавил спереди linked");
         System.out.println(stringLinked.size() + " количество после прибавления linked");
         for (int i = 0; i < stringLinked.size(); i++) {
             System.out.println(stringLinked.getElementIndex(i));
         }
 
-
+        stringLinked.addLast("Novii V konze");
+        System.out.println("вывод списка добавил szadi linked");
+        System.out.println(stringLinked.size() + " количество после прибавления linked");
+        for (int i = 0; i < stringLinked.size(); i++) {
+            System.out.println(stringLinked.getElementIndex(i));
+        }
     }
-
-
 
 
 }
