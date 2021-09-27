@@ -1,9 +1,5 @@
 package svLinkedlist;
 
-import org.w3c.dom.Node;
-
-import java.util.LinkedList;
-
 public class LinkedContainer<E> implements Linked<E> {
 
     private Node<E> fstNode;
