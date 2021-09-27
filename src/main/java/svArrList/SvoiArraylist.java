@@ -4,12 +4,9 @@ import java.util.Iterator;
 
 public class SvoiArraylist<E> implements SvoiArray<E> {
 
-    private E[] values;
+    private E[] values = (E[]) new Object[0];
 
-    public SvoiArraylist() {
-        values = (E[]) new Object[0];
 
-    }
 
     @Override
     public boolean add(E e) {
