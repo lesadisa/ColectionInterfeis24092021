@@ -33,8 +33,8 @@ public class SvoiArraylist<E> implements SvoiArray<E> {
             E[] temp = values; //создаем копию
             values = (E[]) new Object[temp.length - 1]; //уменьшаем на 1 элемент
             System.arraycopy(temp, 0, values, 0, index); //копируем обратно до удаляемого индекса
-            int kolelemposliing = temp.length - index - 1;
-            System.arraycopy(temp, index + 1, values, index, kolelemposliing); //копируем обратно до удаляемого индекса
+            int nextsizeindex = temp.length - index - 1;
+            System.arraycopy(temp, index + 1, values, index, nextsizeindex); //копируем обратно до удаляемого индекса
         } catch (ClassCastException ex) {
             ex.printStackTrace();
         }
