@@ -34,7 +34,7 @@ public class SvoiArraylist<E> implements SvoiArray<E> {
             values = (E[]) new Object[temp.length - 1]; //уменьшаем на 1 элемент
             System.arraycopy(temp, 0, values, 0, index); //копируем обратно до удаляемого индекса
             int nextsizeindex = temp.length - index - 1;
-            System.arraycopy(temp, index + 1, values, index, nextsizeindex); //копируем обратно до удаляемого индекса
+            System.arraycopy(temp, index + 1, values, index, nextsizeindex); //копируем обратно после удаляемого индекса
         } catch (ClassCastException ex) {
             ex.printStackTrace();
         }
